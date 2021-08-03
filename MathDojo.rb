@@ -4,7 +4,7 @@ class MathDojo
         @result = 0
     end
     
-    def add(*number)
+    def add(*number) # * takes as many pramiters as given
         @result += number.flatten.reduce(0, :+)
         self
     end
